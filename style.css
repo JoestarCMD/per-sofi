@@ -774,3 +774,11 @@ button:hover {
     overflow:visible;
 
 }
+
+.intro {
+
+    height:100vh;
+
+    overflow:hidden;
+
+}
