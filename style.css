@@ -290,3 +290,28 @@ button:hover {
 
 
 }
+
+.fade {
+
+    animation: fadeScreen 2s forwards;
+
+}
+
+
+@keyframes fadeScreen {
+
+
+    from {
+
+        opacity:1;
+
+    }
+
+
+    to {
+
+        opacity:0;
+
+    }
+
+}
