@@ -846,3 +846,79 @@ button:hover {
     transform:translateY(0);
 
 }
+
+.envelope-shape {
+
+    width:260px;
+
+    height:160px;
+
+    background:#8b1e3f;
+
+    position:relative;
+
+    border-radius:10px;
+
+    margin-bottom:30px;
+
+    overflow:hidden;
+
+}
+
+
+.flap {
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:0;
+
+    border-left:130px solid transparent;
+
+    border-right:130px solid transparent;
+
+    border-top:80px solid #b52b55;
+
+    transform-origin:top;
+
+    transition:1s;
+
+    z-index:2;
+
+}
+
+
+.paper {
+
+    position:absolute;
+
+    background:white;
+
+    width:180px;
+
+    height:120px;
+
+    left:40px;
+
+    bottom:-100px;
+
+    border-radius:5px;
+
+    transition:1s;
+
+    color:#b52b55;
+
+    font-size:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
