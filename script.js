@@ -82,6 +82,42 @@ button.addEventListener("click", () => {
 
 const openLetter = document.getElementById("openLetter");
 
+if(openLetter){
+
+openLetter.addEventListener("click", () => {
+
+
+    envelope.classList.add("hide-envelope");
+
+
+    letter.classList.add("open");
+
+
+    let i = 0;
+
+
+    function writeLetter(){
+
+        if(i < finalLetter.length){
+
+            letterText.innerHTML += finalLetter.charAt(i);
+
+            i++;
+
+            setTimeout(writeLetter,40);
+
+        }
+
+    }
+
+
+    writeLetter();
+
+
+});
+
+}
+
 const envelope = document.getElementById("envelope");
 
 const letter = document.getElementById("letter");
