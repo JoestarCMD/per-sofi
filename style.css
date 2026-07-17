@@ -827,3 +827,22 @@ button:hover {
     margin-bottom:25px;
 
 }
+
+.memory {
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:all 1s ease;
+
+}
+
+
+.memory.show {
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
