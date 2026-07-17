@@ -39,7 +39,7 @@ openLetter.addEventListener("click", () => {
             i++;
             setTimeout(writeLetter, 35);
 
-        }  else {
+        } else {
 
         setTimeout(() => {
 
@@ -51,7 +51,7 @@ openLetter.addEventListener("click", () => {
 
     }
 
-    }
+ }
 
     writeLetter();
 
