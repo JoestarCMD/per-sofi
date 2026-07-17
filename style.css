@@ -332,3 +332,54 @@ button:hover {
     }
 
 }
+
+.story {
+
+    position: absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    background:#020205;
+
+
+    opacity:0;
+
+
+    pointer-events:none;
+
+}
+
+
+.story h2 {
+
+    font-size:45px;
+
+    max-width:800px;
+
+}
+
+
+.story p {
+
+    margin-top:30px;
+
+    font-size:25px;
+
+}
