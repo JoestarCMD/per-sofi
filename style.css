@@ -782,9 +782,3 @@ button:hover {
     overflow:hidden;
 
 }
-
-.timeline,
-.story,
-.letter-section {
-    display:none;
-}
