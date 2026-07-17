@@ -586,3 +586,172 @@ button:hover {
     margin-top:60px;
 
 }
+
+/* PAGINA RICORDI */
+
+.memories-page {
+
+    min-height:100vh;
+
+    background:#020205;
+
+    color:white;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+
+.memories-page h1 {
+
+    font-size:55px;
+
+    margin-bottom:80px;
+
+}
+
+
+
+.timeline {
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+
+/* linea centrale */
+
+.timeline::before {
+
+    content:"";
+
+    position:absolute;
+
+    width:3px;
+
+    background:rgba(255,255,255,0.3);
+
+    top:0;
+
+    bottom:0;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+
+/* singolo ricordo */
+
+.memory {
+
+    position:relative;
+
+    width:45%;
+
+    padding:30px;
+
+    margin-bottom:80px;
+
+    background:rgba(255,255,255,0.06);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+.memory:nth-child(odd) {
+
+    margin-right:auto;
+
+}
+
+
+
+.memory:nth-child(even) {
+
+    margin-left:auto;
+
+}
+
+
+
+/* pallino sulla linea */
+
+.memory::before {
+
+    content:"❤️";
+
+    position:absolute;
+
+    top:30px;
+
+    right:-65px;
+
+    font-size:25px;
+
+}
+
+
+.memory:nth-child(even)::before {
+
+    left:-65px;
+
+}
+
+
+
+/* ricordo speciale */
+
+.special {
+
+    box-shadow:
+
+    0 0 40px rgba(255,100,150,0.4);
+
+}
+
+
+
+/* mobile */
+
+@media(max-width:700px){
+
+
+.timeline::before {
+
+    left:20px;
+
+}
+
+
+.memory {
+
+    width:85%;
+
+    margin-left:auto!important;
+
+    margin-right:0!important;
+
+}
+
+
+
+.memory::before {
+
+    left:-55px!important;
+
+}
+
+}
