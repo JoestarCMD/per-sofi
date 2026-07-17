@@ -974,3 +974,28 @@ button:hover {
 
 
 }
+
+#signature {
+
+    margin-top:50px;
+
+    font-size:40px;
+
+    font-family: "Brush Script MT", cursive;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    transition:2s;
+
+}
+
+
+#signature.show {
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
