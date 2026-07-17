@@ -1,7 +1,24 @@
 const button = document.getElementById("startButton");
 
+const intro = document.querySelector(".intro");
+
+const story = document.querySelector(".story");
+
+
 button.addEventListener("click", () => {
 
-    document.body.classList.add("fade");
+
+    intro.classList.add("hide");
+
+
+    setTimeout(() => {
+
+
+        story.classList.add("show");
+
+
+    },2000);
+
+
 
 });
