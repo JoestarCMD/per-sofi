@@ -441,3 +441,95 @@ button:hover {
     }
 
 }
+
+.letter-section {
+
+    min-height:100vh;
+
+    background:#020205;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+
+
+.envelope {
+
+    cursor:pointer;
+
+    transition:1s;
+
+}
+
+
+
+.letter-icon {
+
+    font-size:100px;
+
+    filter:drop-shadow(0 0 20px rgba(255,255,255,0.3));
+
+}
+
+
+
+.envelope h2 {
+
+    margin-top:20px;
+
+    font-size:35px;
+
+}
+
+
+
+#openLetter {
+
+    margin-top:30px;
+
+}
+
+
+
+.letter {
+
+    display:none;
+
+    max-width:800px;
+
+    padding:40px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+
+
+.open {
+
+    display:block;
+
+    animation:appear 2s forwards;
+
+}
+
+
+
+.hide-envelope {
+
+    display:none;
+
+}
