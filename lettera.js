@@ -39,7 +39,17 @@ openLetter.addEventListener("click", () => {
             i++;
             setTimeout(writeLetter, 35);
 
-        }
+        }  else {
+
+        setTimeout(() => {
+
+            document
+            .getElementById("signature")
+            .classList.add("show");
+
+        },2000);
+
+    }
 
     }
 
