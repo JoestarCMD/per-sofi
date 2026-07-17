@@ -383,3 +383,60 @@ button:hover {
     font-size:25px;
 
 }
+
+.hide {
+
+    animation: fadeOut 2s forwards;
+
+}
+
+
+
+.show {
+
+    animation: fadeInStory 2s forwards;
+
+    pointer-events:auto;
+
+}
+
+
+
+@keyframes fadeOut {
+
+
+    from {
+
+        opacity:1;
+
+    }
+
+
+    to {
+
+        opacity:0;
+
+    }
+
+
+}
+
+
+
+@keyframes fadeInStory {
+
+
+    from {
+
+        opacity:0;
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+    }
+
+}
