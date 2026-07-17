@@ -23,7 +23,7 @@ Ti amo ❤️`;
 
 openLetter.addEventListener("click", () => {
 
-    envelope.style.display = "none";
+    envelope.classList.add("opened");
 
     letter.style.display = "block";
 
