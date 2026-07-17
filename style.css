@@ -14,12 +14,12 @@ body {
 
     color: white;
 
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
 
 }
 
 
-/* Stelle */
+/* Sfondo stellato */
 
 .stars {
 
@@ -29,30 +29,73 @@ body {
     height: 100%;
 
     background-image:
-    radial-gradient(circle, white 1px, transparent 1px);
+    radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1.5px);
 
-    background-size: 50px 50px;
+    background-size: 60px 60px;
 
-    opacity: 0.35;
+    animation: starsMove 25s linear infinite;
 
-    animation: starsMove 20s linear infinite;
+    opacity: 0.45;
 
 }
-
 
 
 @keyframes starsMove {
 
     from {
-
         transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(80px);
+    }
+
+}
+
+
+
+/* Nebulosa */
+
+.intro::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    background: radial-gradient(
+        circle,
+        rgba(120,70,255,0.35),
+        transparent 70%
+    );
+
+
+    filter: blur(40px);
+
+    animation: pulse 8s infinite alternate;
+
+}
+
+
+
+@keyframes pulse {
+
+    from {
+
+        transform: scale(0.9);
+
+        opacity:0.5;
 
     }
 
 
     to {
 
-        transform: translateY(60px);
+        transform: scale(1.1);
+
+        opacity:0.8;
 
     }
 
@@ -60,75 +103,97 @@ body {
 
 
 
-/* Contenuto */
+/* Contenuto centrale */
 
 .intro {
 
-    height: 100vh;
+    height:100vh;
 
-    display: flex;
+    display:flex;
 
-    flex-direction: column;
+    flex-direction:column;
 
-    justify-content: center;
+    justify-content:center;
 
-    align-items: center;
+    align-items:center;
 
-    text-align: center;
+    text-align:center;
 
-    position: relative;
+    position:relative;
 
 }
 
 
+
+/* Titolo */
 
 h1 {
 
-    font-size: 70px;
+    font-size:75px;
 
-    font-weight: 600;
+    font-weight:600;
 
-    opacity: 0;
+    letter-spacing:2px;
 
-    animation: fadeIn 2s forwards;
+
+    opacity:0;
+
+    animation: appear 2.5s forwards;
+
+
+    text-shadow:
+
+    0 0 20px rgba(255,255,255,0.3);
 
 }
 
 
+
+/* Sottotitolo */
 
 p {
 
-    margin-top: 20px;
+    margin-top:25px;
 
-    font-size: 22px;
+    font-size:22px;
 
-    color: #dddddd;
+    color:#d5d5d5;
 
-    opacity: 0;
 
-    animation: fadeIn 2s forwards;
+    opacity:0;
 
-    animation-delay: 1s;
+    animation: appear 2.5s forwards;
+
+    animation-delay:1s;
 
 }
 
 
+
+/* Bottone */
 
 button {
 
 
-    margin-top: 50px;
-
-    padding: 15px 45px;
+    margin-top:55px;
 
 
-    border-radius: 50px;
+    padding:16px 55px;
 
 
-    border: 1px solid rgba(255,255,255,0.3);
+    border-radius:50px;
 
 
-    background: rgba(255,255,255,0.08);
+    border:
+
+    1px solid rgba(255,255,255,0.35);
+
+
+
+    background:
+
+    rgba(255,255,255,0.08);
+
 
 
     color:white;
@@ -140,13 +205,19 @@ button {
     cursor:pointer;
 
 
+    backdrop-filter:blur(10px);
+
+
+
     opacity:0;
 
 
-    animation: fadeIn 2s forwards;
-
+    animation: appear 2.5s forwards;
 
     animation-delay:2s;
+
+
+    transition:0.4s;
 
 
 }
@@ -156,24 +227,33 @@ button {
 button:hover {
 
 
-    transform: scale(1.08);
+    transform:scale(1.1);
 
 
-    background: rgba(255,255,255,0.2);
+    background:
+
+    rgba(255,255,255,0.2);
+
+
+    box-shadow:
+
+    0 0 30px rgba(255,255,255,0.3);
 
 
 }
 
 
 
-@keyframes fadeIn {
+/* Animazione entrata */
+
+@keyframes appear {
 
 
     from {
 
         opacity:0;
 
-        transform:translateY(30px);
+        transform:translateY(40px);
 
     }
 
@@ -186,11 +266,11 @@ button:hover {
 
     }
 
-
 }
 
 
 
+/* Smartphone */
 
 @media(max-width:600px){
 
