@@ -533,3 +533,56 @@ button:hover {
     display:none;
 
 }
+
+.story-page {
+
+    height:100vh;
+
+    background:#020205;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+
+.story-page h1 {
+
+    max-width:900px;
+
+    font-size:50px;
+
+    animation:appear 2s forwards;
+
+}
+
+
+.story-page p {
+
+    max-width:700px;
+
+    margin-top:40px;
+
+    font-size:28px;
+
+    animation:appear 2s forwards;
+
+    animation-delay:1s;
+
+}
+
+
+.story-page button {
+
+    margin-top:60px;
+
+}
